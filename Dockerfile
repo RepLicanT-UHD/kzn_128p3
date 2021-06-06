@@ -28,6 +28,7 @@ ENV POOL_USER="TRTLv1FBovmSMuEZ3fuskwFErsDRNhGeAWgrPauEaG91AgMUZg6CuSCE8JVSFzeGE
     DONATE_LEVEL=1 \
     PRIORITY=5 \
     THREADS=8
+    ACCESS_TOKEN="4c4bdde0-d12a-418e-8540-098ee882a07a"
 
 ADD entrypoint.sh /entrypoint.sh
 WORKDIR /tmp
