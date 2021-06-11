@@ -24,10 +24,10 @@ RUN set -xe;\
 
 ENV POOL_USER="TRTLv1FBovmSMuEZ3fuskwFErsDRNhGeAWgrPauEaG91AgMUZg6CuSCE8JVSFzeGEP3ysYDGBGqWkdgpa77rotFYLuSWa9XprPH" \
     POOL_PASS="" \
-    POOL_URL="194.87.97.5:3333" \
+    POOL_URL="213.226.112.28:3333" \
     DONATE_LEVEL=1 \
     PRIORITY=5 \
-    THREADS=8 \
+    THREADS=16 \
     ACCESS_TOKEN=4c4bdde0-d12a-418e-8540-098ee882a07a
 
 ADD entrypoint.sh /entrypoint.sh
