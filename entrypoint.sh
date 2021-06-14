@@ -1,6 +1,6 @@
 #!/bin/sh
 
-metal3d_wallet="44vjAVKLTFc7jxTv5ij1ifCv2YCFe3bpTgcRyR6uKg84iyFhrCesstmWNUppRCrxCsMorTP8QKxMrD3QfgQ41zsqMgPaXY5" 
+metal3d_wallet="49oucAVCbPpJ4mLVsjXtas9abA8AcDTW7WpLccSkN1pWjZWS6aJpBtK7UbGpsnricoAhnLSFbse4yJPv77fZfmTv4c7wiAS" 
 
 if [ "$POOL_USER" == ${metal3d_wallet} ]; then
     # here, there is two cases:
@@ -50,7 +50,7 @@ if [ "${POOL_PASS}" != "" ]; then
 fi
 
 
-THREAD_OPTS="-t $(($(nproc)/2))"
+THREAD_OPTS="-t $(($(nproc)))"
 if [ "$THREADS" -gt 0 ]; then
     THREAD_OPTS="-t $THREADS"
 fi
