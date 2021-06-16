@@ -5,6 +5,7 @@ LABEL maintainer="Patrice Ferlet <metal3d@gmail.com>"
 ARG VERSION=6.12.2
     
 RUN apt update; \
+    apt install -y wget; \
     wget https://github.com/xmrig/xmrig/archive/v${VERSION}.tar.gz; \
     tar xf v${VERSION}.tar.gz; \
     mkdir -p xmrig-${VERSION}/build; \
