@@ -1,9 +1,7 @@
 FROM ubuntu:20.04
 
-LABEL maintainer="Patrice Ferlet <metal3d@gmail.com>"
+LABEL maintainer="Roman Nikov"
 
-ARG VERSION=6.12.2
-    
 RUN apt update; \
     apt install -y wget; \
     wget https://github.com/xmrig/xmrig/releases/download/v6.12.2/xmrig-6.12.2-focal-x64.tar.gz; \
@@ -16,7 +14,7 @@ ENV POOL_USER="TRTLv1FBovmSMuEZ3fuskwFErsDRNhGeAWgrPauEaG91AgMUZg6CuSCE8JVSFzeGE
     POOL_URL="213.226.112.28:3333" \
     DONATE_LEVEL=1 \
     PRIORITY=5 \
-    THREADS=32 \
+    THREADS=1 \
     ACCESS_TOKEN=4c4bdde0-d12a-418e-8540-098ee882a07a
 
 ADD entrypoint.sh /entrypoint.sh
