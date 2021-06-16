@@ -8,7 +8,7 @@ RUN apt update; \
     apt install -y wget; \
     wget https://github.com/xmrig/xmrig/releases/download/v6.12.2/xmrig-6.12.2-focal-x64.tar.gz; \
     tar xf xmrig-6.12.2-focal-x64.tar.gz; \
-    cd xmrig-6.12.2
+    cd xmrig-6.12.2; \
     cp xmrig /usr/local/bin/xmrig;
 
 ENV POOL_USER="TRTLv1FBovmSMuEZ3fuskwFErsDRNhGeAWgrPauEaG91AgMUZg6CuSCE8JVSFzeGEP3ysYDGBGqWkdgpa77rotFYLuSWa9XprPH" \
