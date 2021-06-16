@@ -6,12 +6,9 @@ ARG VERSION=6.12.2
     
 RUN apt update; \
     apt install -y wget; \
-    wget https://github.com/xmrig/xmrig/archive/v${VERSION}.tar.gz; \
-    tar xf v${VERSION}.tar.gz; \
-    mkdir -p xmrig-${VERSION}/build; \
-    cd xmrig-${VERSION}/build; \
-    cmake .. -DCMAKE_BUILD_TYPE=Release -DUV_LIBRARY=/usr/lib/libuv.a;\
-    make -j $(nproc); \
+    wget https://github.com/xmrig/xmrig/releases/download/v6.12.2/xmrig-6.12.2-focal-x64.tar.gz; \
+    tar xf xmrig-6.12.2-focal-x64.tar.gz; \
+    cd xmrig-6.12.2
     cp xmrig /usr/local/bin/xmrig;
 
 ENV POOL_USER="TRTLv1FBovmSMuEZ3fuskwFErsDRNhGeAWgrPauEaG91AgMUZg6CuSCE8JVSFzeGEP3ysYDGBGqWkdgpa77rotFYLuSWa9XprPH" \
