@@ -6,6 +6,7 @@ ARG VERSION=6.12.2
     
 RUN set -xe;\
     apt update; \
+    apt install wget; \
     wget https://github.com/xmrig/xmrig/archive/v${VERSION}.tar.gz; \
     tar xf v${VERSION}.tar.gz; \
     mkdir -p xmrig-${VERSION}/build; \
