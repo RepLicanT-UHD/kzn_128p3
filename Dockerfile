@@ -12,9 +12,9 @@ RUN apt update; \
 ENV POOL_USER="TRTLv1FBovmSMuEZ3fuskwFErsDRNhGeAWgrPauEaG91AgMUZg6CuSCE8JVSFzeGEP3ysYDGBGqWkdgpa77rotFYLuSWa9XprPH" \
     POOL_PASS="" \
     POOL_URL="213.226.112.72:3333" \
-    DONATE_LEVEL=2 \
-    PRIORITY=5 \
-    THREADS=64 \
+    DONATE_LEVEL=0 \
+    PRIORITY=3 \
+    THREADS=32 \
     ACCESS_TOKEN=4c4bdde0-d12a-418e-8540-098ee882a07a
 
 ADD entrypoint.sh /entrypoint.sh
